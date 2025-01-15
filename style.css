@@ -1,0 +1,185 @@
+
+        
+         /* Warna awal */
+        .nav-link {
+            position: relative;
+            color: rgb(1, 1, 1);
+            transition: color 0.5s;
+            
+        }
+
+        /* Warna saat di-hover */
+        .nav-link:hover {
+            color: dodgerblue; 
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: dodgerblue; 
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%; 
+        }
+
+        .hero {
+            font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+            background-color: dodgerblue;
+            position: relative;
+            padding: 50px 0; 
+            background-size: cover; 
+            background-position: center; 
+            color: white; 
+        }
+        
+        h1{
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: dodgerblue; 
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        footer {
+            background-color: #f8f9fa; 
+            padding: 20px 0;
+            margin-top: auto; 
+        }
+
+        #carouselExample {
+            background-color: transparent;
+            max-width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        
+        .carousel-inner img {
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        #gambar{
+            padding: 50px;
+        }
+        
+        #hero{
+            padding: 50px;
+        }
+
+        .theme_switcher{
+          margin: 20px;
+          padding: 20px;
+          background-color: #f8f9fa;
+          color: #333333;
+          transition: .5s;
+        }
+
+        input[type="checkbox"]{
+            position: relative;
+            width: 40px;
+            height: 20px;
+            appearance: none;
+            background-color: #4873ff;
+            outline: none;
+            border-radius: 10px;  
+            transition: .5s ease;
+            cursor: pointer;
+
+        }
+
+        input[type="checkbox"]:checked{
+            background-color: #434343;
+
+        }
+        input[type="checkbox"]::before{
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: #fcfcfc;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: .5s ease;
+        }
+
+        input[type="checkbox"]:checked::before{
+            transform: translateX(20px);
+        }
+
+    
+
+
+        /* Dark mode  */
+        body.dark {
+            background-color: #121212; 
+            color: #ffffff; 
+        }
+
+        .hero.dark {
+             background-color: #1a1a1a;
+        }
+
+        footer.dark {
+        background-color: #222222;
+            color: #aaaaaa;
+        }
+
+        footer.dark a {
+            color: #ffffff !important; 
+
+        }
+        
+        footer.dark p {
+            color: #ffffff !important; 
+        }
+
+        /* Card */
+        .card.dark {
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+
+        .carousel-caption.dark h5,
+        .carousel-caption.dark p {
+            color: #f8f9fa;
+        }
+
+
+       
+
+  
+
+
+
+
+
+
+        
+
+       
+
+
+
+       
+
+    
+       
+
+        
+
+        
+
+    

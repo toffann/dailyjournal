@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="login-form">
-        <h2>Login</h2>
+        <h2>    <wbr>Welcome to Taufan's Journal</wbr></h2>
         <?php if (isset($error)) { echo "<p class='error'>$error</p>"; } ?>
         <form method="POST" action="">
             <label for="username">Username</label>
